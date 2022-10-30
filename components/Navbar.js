@@ -26,6 +26,9 @@ import { FiTag } from "react-icons/fi";
 import { HiCode } from "react-icons/hi";
 import Script from "next/script";
 function Navbar() {
+
+  
+
   let fl=false;
   const show=()=>{
    
@@ -36,6 +39,10 @@ function Navbar() {
       document.getElementById('two').style.opacity='0';
       document.getElementById('two').style.transform='translate(-20px)';
       document.getElementById('three').style.transform='rotate(-45deg) translate(9px)';
+
+      // document.getElementById('one').style.backgroundColor='#8480ff';
+      // document.getElementById('three').style.backgroundColor='#8480ff';
+
       fl=true;       
       }
       else{
@@ -44,6 +51,9 @@ function Navbar() {
       document.getElementById('two').style.opacity='1';
       document.getElementById('two').style.transform='translate(0px)';
       document.getElementById('three').style.transform='rotate(0deg) translate(0px)';
+
+      // document.getElementById('one').style.backgroundColor='#A0AEC0';
+      // document.getElementById('three').style.backgroundColor='#A0AEC0';
             fl=false;
           }
   }
@@ -60,30 +70,33 @@ function Navbar() {
       justify={"space-between"}
       style={{ boxShadow: " -1px 0px 20px 0px rgba(99,93,255,0.2)" }}
       bg={"white"}
-      position="relative"
+    position="relative"
+    
+      zIndex={"3"}
+      
     >
       {/* 1st component */}
       <Flex align={"center"} minW="215px" justify={"space-between"}>
 
 
-        <Menu  autoSelect={false} closeOnBlur={false} closeOnSelect={false}>
-  <MenuButton onClick={show} >
+        <Menu   autoSelect={false} closeOnBlur={false} closeOnSelect={false}>
+  <MenuButton onClick={show} className="hambtn" bg="white">
   <Flex 
           h={"20px"}
           w="24px"
           direction={"column"}
           justifyContent="space-between"
-        
+          
         >
-          <Box id="one" h="5px" bg="gray.400" borderRadius={"8px"} style={{transition: "transform 0.3s"}}></Box>
-          <Box id="two" h="4px" bg="gray.400" borderRadius={"8px"} style={{transition: "opacity 0.3s, transform 0.3s"}}></Box>
-          <Box id="three" h="5px" bg="gray.400" borderRadius={"8px"} style={{transition: "transform 0.3s"}}></Box>
+          <Box className="sub" id="one" h="5px" bg="gray.400" borderRadius={"8px"} style={{transition: "transform 0.3s,background-color 0.3s"}}></Box>
+          <Box className="sub" id="two" h="4px" bg="gray.400" borderRadius={"8px"} style={{transition: "opacity 0.3s, transform 0.3s,background-color 0.2s"}}></Box>
+          <Box className="sub" id="three" h="5px" bg="gray.400" borderRadius={"8px"} style={{transition: "transform 0.3s,background-color 0.1s"}}></Box>
         </Flex>
   </MenuButton>
-  <MenuList  position={"relative"} zIndex={"-1"} bottom="-13px" left="-15px"
+  <MenuList  position={"relative"} zIndex={"0"} bottom="-13px" left="-16px"
    border="none"
    bg="white"
-   boxShadow={"none"}
+  //  boxShadow={"none"}
     py="5"
     >
     <MenuItem my="5px" fontWeight={"semibold"} icon={<BsQuestionLg size={"18px"} color="#635dff" /> } borderRight="2px solid #635dff"  >Questions</MenuItem>
@@ -93,10 +106,6 @@ function Navbar() {
     <MenuItem my="5px" fontWeight={"semibold"} icon={<BsQuestionSquare size={"18px"} color="#635dff" />  }>About</MenuItem>
   </MenuList>
 </Menu>
-
-
-
-
 
 
         <Box h="30px">
@@ -151,6 +160,9 @@ function Navbar() {
       </Box>
       {/* 3rd component */}
     </Flex>
+
+
+
     </>
   );
 }

@@ -1,13 +1,17 @@
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import theme from "../theme.js";
-import { ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
+import SideBar from "../components/sidebar/SideBar";
+
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <ChakraProvider theme={theme}>
         <Navbar />
+      <SideBar/>
         <Component {...pageProps} />
       </ChakraProvider>
     </>
