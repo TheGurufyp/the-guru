@@ -4,6 +4,7 @@ import ChatBox from './ChatBox'
 // import css from "../../styles/SideBar.module.css"
 import { BiSearchAlt } from "react-icons/bi";
 import MyChats from './MyChats';
+import FindUserModal from './FindUserModal';
 function SideBar() {
 
  const initialRender  = useRef(true)
@@ -53,10 +54,16 @@ useEffect(() => {
 
   return (
     <>
+
    <Box style={styles} >
         <Box mt="100px">
+          
+<FindUserModal>
            <Button colorScheme={"guru"} display="block" mx="auto" w="180px" ><Icon as={BiSearchAlt} position="absolute" left={"10px"} boxSize="23px" top="8px"/> Find Users</Button>
+</FindUserModal>
+
            </Box>
+
 
 <Box pt="20px">
   <MyChats setopenChatbox={setopenChatbox} setselectedChat={setselectedChat} />

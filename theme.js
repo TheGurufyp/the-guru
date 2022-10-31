@@ -25,7 +25,7 @@ const theme = extendTheme({
         },
         outline: {
           borderRadius: "8px",
-        },
+        }
       },
       sizes: {
         guruMd: {
