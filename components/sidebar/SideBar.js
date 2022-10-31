@@ -1,7 +1,6 @@
 import React,{useRef,useState,useEffect} from 'react'
 import { Box, Button, Icon, ScaleFade,useDisclosure } from '@chakra-ui/react'
 import ChatBox from './ChatBox'
-// import css from "../../styles/SideBar.module.css"
 import { BiSearchAlt } from "react-icons/bi";
 import MyChats from './MyChats';
 import FindUserModal from './FindUserModal';
@@ -12,7 +11,8 @@ function SideBar() {
     const [openChatbox, setopenChatbox] = useState(false)
     const [selectedChat, setselectedChat] = useState()
     const { isOpen, onToggle } = useDisclosure()
-let styles={
+
+let sideStyles={
     position: "fixed",
     right: "0px",
     top:"0px",
@@ -39,23 +39,10 @@ useEffect(() => {
 
 
 
-
-// const showSidebar=()=>{
-//     console.log("d")
-//     console.log(css.tanslate-0)
-// if( ref.current.classList.contains(css.tanslate-0)){
-//     ref.current.classList.remove(css.tanslate-0)
-//     console.log("s")
-//  }
-//  else{
-//     ref.current.classList.add(css.tanslate-0)
-//  }
-// }
-
   return (
     <>
 
-   <Box style={styles} >
+   <Box style={sideStyles} >
         <Box mt="100px">
           
 <FindUserModal>

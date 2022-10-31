@@ -150,10 +150,8 @@ autoComplete='off'
                                 <Box w="8px"></Box>
                                 <Button h="100%" colorScheme={"guru"} borderRadius="8px">Send</Button>
                             </Flex>
-                        </Box></> :
-                    <Flex h="86%" align={"center"} justifyContent="center">
-                        
-                    </Flex>
+                        </Box></> 
+                   
                 
 
 
