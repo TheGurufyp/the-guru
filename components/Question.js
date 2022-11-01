@@ -23,7 +23,7 @@ import { TimeIcon, EditIcon, DeleteIcon, ViewIcon } from "@chakra-ui/icons";
 import { Texteditor } from "../Components/Texteditor.js";
 export default function Home() {
   const editHandler = () => {
-    console.log("Edit button");
+    // console.log("Edit button");
   };
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);

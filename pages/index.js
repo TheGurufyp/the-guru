@@ -4,7 +4,7 @@ import css from "../styles/home.module.css"
 import Typed from 'react-typed';
 export default function Home() {
 
-  console.log(css.p)
+
   return (
     <>
       <Head>
@@ -13,24 +13,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Flex h="450px" bg="gray.100" border={"1px"} borderColor="gray.100"    maxW="1400px" mx="auto" borderBottomRadius={"8px"}>
+      {/* section 1 started*/}
+      <Flex h="450px"
+       bg="gray.100"
+        border={"1px"} borderColor="gray.100" maxW="1400px" mx="auto" borderBottomRadius={"8px"}>
 
         <Box pl="100px" flexBasis="50%" mt="20px">
           <Heading mt="90px" size={["lg", "xl", "2xl"]} >Every <span> <Heading color="guru.500" size={["lg", "xl", "2xl"]} display={"inline-block"}> <Typed
-                strings={[
-                  'Developer',
-                  'Everyone',
-                ]}
-                typeSpeed={50}
-                backSpeed={50}
-                
-                backDelay={2000}
-                loop
-              /></Heading></span>has</Heading>
+            strings={[
+              'Developer',
+              'Everyone',
+            ]}
+            typeSpeed={50}
+            backSpeed={70}
+
+            backDelay={2000}
+            loop
+          /></Heading></span>has</Heading>
           <Heading mt="10px" size={["lg", "xl", "2xl"]}>a Guru.</Heading>
 
 
-        
+
           <Heading color="guru.500" mt="40px" size={["lg", "xl", "2xl"]}>Just ask Guru!</Heading>
 
           <Button mt="30px" colorScheme="guru">Ask Question</Button>
@@ -43,7 +46,7 @@ export default function Home() {
 
         </Box>
       </Flex>
-
+      {/* section 1 ended */}
     </>
   );
 }
