@@ -17,7 +17,7 @@ export const Topquestion = () => {
     <>
       <Flex
         border={"1px"}
-        borderColor="gray.200"
+        borderColor="gray.300"
         justify="space-between"
         align={"center"}
         p="1rem"
