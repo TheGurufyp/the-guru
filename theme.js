@@ -1,6 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  fonts: {
+    heading: `'Open Sans', sans-serif`,
+    body: `'Raleway', sans-serif`,
+  },
   colors: {
     guru: {
       50: "#e6e6ff",
@@ -25,7 +29,7 @@ const theme = extendTheme({
         },
         outline: {
           borderRadius: "8px",
-        }
+        },
       },
       sizes: {
         guruMd: {

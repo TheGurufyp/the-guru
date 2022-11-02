@@ -1,5 +1,6 @@
 import React from "react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import "@fontsource/raleway/400.css";
 import {
   Flex,
   Box,
@@ -67,7 +68,7 @@ export const Topquestion = () => {
           <Box
             className="sideIcon"
             border={"1px"}
-            borderColor="gray.200"
+            borderColor="gray.300"
             p={"3"}
             borderRadius="8px"
             display="flex"
@@ -87,7 +88,7 @@ export const Topquestion = () => {
             className="sideIcon"
             display="flex"
             border={"1px"}
-            borderColor="gray.200"
+            borderColor="gray.300"
             p={"3"}
             borderRadius="8px"
             flexDirection={"column"}
@@ -104,7 +105,7 @@ export const Topquestion = () => {
             // border={"1px"}
             display="flex"
             border={"1px"}
-            borderColor="gray.200"
+            borderColor="gray.300"
             p={"3"}
             borderRadius="8px"
             flexDirection={"column"}
