@@ -1,11 +1,11 @@
 import React from "react";
 
-const allquestions = () => {
+const Allquestions = () => {
   return (
     <>
-      <h1>All QUestion page</h1>
+      <h1>All QUestion pages</h1>
     </>
   );
 };
 
-export default allquestions;
+export default Allquestions;

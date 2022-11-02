@@ -84,7 +84,7 @@ function Navbar() {
         style={{ boxShadow: " -1px 0px 20px 0px rgba(99,93,255,0.2)" }}
         bg={"white"}
         position="relative"
-
+            // w="100%"
         zIndex={"3"}
 
       >
