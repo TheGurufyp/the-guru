@@ -47,11 +47,15 @@ const Question = () => {
 
             <TabPanel>
               <Topquestion />
+              <Topquestion />
             </TabPanel>
+
             <TabPanel>
               <Topquestion />
             </TabPanel>
+
             <TabPanel>
+              <Topquestion />
               <Topquestion />
             </TabPanel>
           </TabPanels>

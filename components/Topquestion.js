@@ -22,6 +22,7 @@ export const Topquestion = () => {
         align={"center"}
         p="1rem"
         borderRadius={"8px"}
+        my="2"
       >
         <Flex
           // border={"1px"}
