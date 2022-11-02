@@ -33,15 +33,15 @@ export const Texteditor = () => {
   }, [quill]);
   return (
     <>
-      <Box className="textGlow" width={"80%"} marginInline="auto">
+      <Box
+        className="textGlow"
+        // width={"80%"}
+        marginInline="auto"
+      >
         <div className="textEditor">
           <div ref={quillRef} />
         </div>
       </Box>
-
-      <div className="btn-1">
-        <Button type="submit">Post Answer</Button>
-      </div>
     </>
   );
 };
