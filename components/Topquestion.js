@@ -56,7 +56,7 @@ export const Topquestion = () => {
               alt="Dan Abramov"
             />{" "}
             <Box fontWeight={"sm"} mx="4px">
-              hunfa modify 1 min ago
+              hunfa Jalil
             </Box>
           </Box>
         </Flex>
@@ -66,7 +66,10 @@ export const Topquestion = () => {
         >
           <Box
             className="sideIcon"
-            // border={"1px"}
+            border={"1px"}
+            borderColor="gray.200"
+            p={"3"}
+            borderRadius="8px"
             display="flex"
             flexDirection={"column"}
             alignItems="center"
@@ -81,7 +84,12 @@ export const Topquestion = () => {
 
           <Box
             // border={"1px"}
+            className="sideIcon"
             display="flex"
+            border={"1px"}
+            borderColor="gray.200"
+            p={"3"}
+            borderRadius="8px"
             flexDirection={"column"}
             alignItems="center"
             mx={"0.9rem"}
@@ -92,8 +100,13 @@ export const Topquestion = () => {
             <ViewIcon />
           </Box>
           <Box
+            className="sideIcon"
             // border={"1px"}
             display="flex"
+            border={"1px"}
+            borderColor="gray.200"
+            p={"3"}
+            borderRadius="8px"
             flexDirection={"column"}
             alignItems="center"
             mx={"0.5rem"}

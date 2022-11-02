@@ -87,3 +87,7 @@ body{
 .hambtn:hover .sub{
     background-color: #8480ff;
 }
+
+.sideIcon:hover{
+    border: 1px solid #8480ff;
+}

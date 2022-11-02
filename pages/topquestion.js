@@ -21,9 +21,10 @@ const Question = () => {
         <Heading
           // border={"1px"}
           size="lg"
-          width={"80%"}
+          width={"72%"}
           marginInline="auto"
           my={"2rem"}
+          //   ml="15rem"
         >
           Top Questions
         </Heading>
