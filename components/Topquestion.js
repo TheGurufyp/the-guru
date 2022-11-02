@@ -1,6 +1,6 @@
 import React from "react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import "@fontsource/raleway/400.css";
+
 import {
   Flex,
   Box,

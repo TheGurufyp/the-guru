@@ -36,6 +36,7 @@ const Question = () => {
           width="75%"
           marginInline={"auto"}
           border="1px"
+          borderRadius={"8px"}
           borderColor={"gray.200"}
         >
           <TabList
