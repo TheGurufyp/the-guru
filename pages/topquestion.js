@@ -5,6 +5,7 @@ import { AiFillLike } from "react-icons/ai";
 import { RiMessage3Fill } from "react-icons/ri";
 import { ViewIcon } from "@chakra-ui/icons";
 import { Topquestion } from "../components/Topquestion";
+import Link from "next/link";
 
 const Question = () => {
   return (
@@ -27,7 +28,10 @@ const Question = () => {
           >
             Top Questions
           </Heading>
+          <Link href={"/askquestion"} legacyBehavior><a>
           <Button colorScheme={"guru"}>Ask Question</Button>
+
+            </a></Link>
         </Flex>
 
         {/* Main Heading Start */}

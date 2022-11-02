@@ -16,6 +16,7 @@ let sideStyles={
     position: "fixed",
     right: "0px",
     top:"0px",
+    zIndex:2,
     backgroundColor: "white",
     width: "300px",
     height: "100vh",

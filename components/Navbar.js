@@ -26,6 +26,7 @@ import { FiTag } from "react-icons/fi";
 import { HiCode } from "react-icons/hi";
 import Script from "next/script";
 import Nav_Search_Expand from "./Nav_Search_Expand";
+import Link from "next/link";
 function Navbar() {
 
   const { isOpen, onToggle } = useDisclosure()
@@ -112,7 +113,10 @@ function Navbar() {
               //  boxShadow={"none"}
               py="5"
             >
+               <Link href={"/topquestion"} legacyBehavior><a>
               <MenuItem my="5px" fontWeight={"semibold"} icon={<BsQuestionLg size={"18px"} color="#635dff" />} borderRight="2px solid #635dff"  >Questions</MenuItem>
+
+            </a></Link>
               <MenuItem my="5px" fontWeight={"semibold"} icon={<FiTag size={"18px"} color="#635dff" />}>Tags</MenuItem>
               <MenuItem my="5px" fontWeight={"semibold"} icon={<FiUser size={"18px"} color="#635dff" />}>Users</MenuItem>
               <MenuItem my="5px" fontWeight={"semibold"} icon={<HiCode size={"18px"} color="#635dff" />}>Online Compiler</MenuItem>
@@ -122,7 +126,9 @@ function Navbar() {
 
 
           <Box h="30px">
+          <Link href={"/"} legacyBehavior><a>
             <Image h="100%" src="/images/logo-high.png" alt="logoImage"></Image>
+            </a></Link>
           </Box>
         </Flex>
         {/* 1st component */}

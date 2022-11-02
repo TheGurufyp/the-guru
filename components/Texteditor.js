@@ -9,7 +9,8 @@ import { Button } from "@chakra-ui/react";
 export const Texteditor = () => {
   const modules = {
     toolbar: [
-      ["bold", "italic", "underline", "strike", "code-block"],
+      ["bold", "italic", "underline", "strike",'code-block'],
+       
       [{ align: [] }],
 
       [{ list: "ordered" }, { list: "bullet" }],

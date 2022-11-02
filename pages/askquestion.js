@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState}from "react";
 import {
   Box,
   Flex,
@@ -11,24 +11,31 @@ import {
   OrderedList,
   UnorderedList,
   Input,
+  Button,ButtonGroup
 } from "@chakra-ui/react";
 import { Texteditor } from "../Components/Texteditor";
+import Tagsinput from "../components/Tagsinput";
 function Askquestion() {
+
   return (
     <>
       <Flex
         //  border="2px solid red"
-        align="center"
+        // align="center"
+        px="10"
         justify={"center"}
         direction="column"
         mt="50px"
+        mb="50px"
+        maxW={"1000px"}
+        mx="auto"
       >
         {/* box 1 started*/}
         <Box
           px="6"
           py="4"
           border={"1px"}
-          width="60%"
+          
           borderColor={"guru.100"}
           borderRadius="8px"
           bg="#b5b3ff38"
@@ -76,7 +83,7 @@ function Askquestion() {
           px="6"
           py="4"
           border={"1px"}
-          width="60%"
+          
           borderColor={"gray.200"}
           borderRadius="8px"
           bg="white"
@@ -93,7 +100,6 @@ function Askquestion() {
             borderRadius={"8px"}
             variant="outline"
             borderColor={"gray.400"}
-            type="search"
             placeholder="eg. How to center a div in html "
             _focus={{
               outline: "0px",
@@ -114,7 +120,7 @@ function Askquestion() {
           px="6"
           py="4"
           border={"1px"}
-          width="60%"
+          
           borderColor={"gray.200"}
           borderRadius="8px"
           bg="white"
@@ -132,6 +138,49 @@ function Askquestion() {
         </Box>
 
         {/* box 3 ended */}
+
+
+
+
+
+
+
+
+
+
+
+         {/* box 4 started */}
+
+         <Box
+          mt="20px"
+          px="6"
+          py="4"
+          
+          border={"1px"}
+          
+          borderColor={"gray.200"}
+          borderRadius="8px"
+          bg="white"
+          boxShadow={"md"}
+        >
+          <Text fontSize={"1.4rem"} fontWeight="semibold">
+            Tags
+          </Text>
+          <Text mb="5px" fontSize={"0.8rem"}>
+          Add up to 5 tags to describe what your question is about.
+          </Text>
+           <Tagsinput />
+          
+        </Box>
+
+        {/* box 4 ended */}
+
+        <Box  mt="20px"  align="right">
+        <ButtonGroup   spacing='3' >
+  <Button colorScheme='guru'>Submit Question</Button>
+  <Button colorScheme='red' variant={"outline"}>Discard draft</Button>
+</ButtonGroup>
+        </Box>
       </Flex>
     </>
   );

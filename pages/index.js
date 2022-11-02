@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Heading, Spacer } from "@chakra-ui/react";
 import Head from "next/head";
-import css from "../styles/home.module.css"
+import Link from "next/link";
+
 import Typed from 'react-typed';
 export default function Home() {
 
@@ -16,7 +17,7 @@ export default function Home() {
       {/* section 1 started*/}
       <Flex h="450px"
        bg="gray.100"
-        border={"1px"} borderColor="gray.100" maxW="1400px" mx="auto" borderBottomRadius={"8px"}>
+        border={"1px"} borderColor="gray.100" maxW="1400px" mx="auto" borderBottomRadius={"8px"} >
 
         <Box pl="100px" flexBasis="50%" mt="20px">
           <Heading mt="90px" size={["lg", "xl", "2xl"]} >Every <span> <Heading color="guru.500" size={["lg", "xl", "2xl"]} display={"inline-block"}> <Typed
@@ -35,8 +36,8 @@ export default function Home() {
 
 
           <Heading color="guru.500" mt="40px" size={["lg", "xl", "2xl"]}>Just ask Guru!</Heading>
-
-          <Button mt="30px" colorScheme="guru">Ask Question</Button>
+           <Link href={"/askquestion"} legacyBehavior><a><Button mt="30px" colorScheme="guru">Ask Question</Button></a></Link>
+          
         </Box>
 
         <Box flexBasis="50%" mt="20px">
