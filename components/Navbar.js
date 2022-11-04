@@ -20,7 +20,7 @@ import {
   MenuDivider, Icon, ScaleFade, Slide, SlideFade, useDisclosure, Highlight
 } from "@chakra-ui/react";
 import { BiSearchAlt } from "react-icons/bi";
-import { BsQuestionSquare, BsQuestionLg } from "react-icons/bs"
+import { BsQuestionSquare, BsQuestionLg, BsUiRadios } from "react-icons/bs"
 import { FiUser } from "react-icons/fi";
 import { FiTag } from "react-icons/fi";
 import { HiCode } from "react-icons/hi";
@@ -86,7 +86,7 @@ function Navbar() {
         bg={"white"}
         position="relative"
             // w="100%"
-        zIndex={"3"}
+        zIndex={"1000"}
 
       >
         {/* 1st component */}
@@ -141,7 +141,7 @@ function Navbar() {
         <Box minW="240px" maxW="587px" w="100%" position={
           "relative"} >
           <ScaleFade initialScale={0.9} in={isOpen} unmountOnExit={true}>
-            <Box ref={navbar_search} position={"absolute"} width={"100%"} h="130px" top={"2.7rem"} borderRadius="8px" bg="white" border={"2px"} borderColor="gray.300" p={"10px"}>
+            <Box ref={navbar_search} position={"absolute"} width={"100%"} h="130px" top={"2.7rem"} borderRadius="8px" bg="white" border={"2px"} borderColor="gray.300" p={"10px"} >
                <Nav_Search_Expand/>
              
             </Box>
@@ -179,13 +179,19 @@ function Navbar() {
         {/*  3rd component */}
         <Box>
           <ButtonGroup>
-            
-            <Button colorScheme={"guru"} variant="outline" size="guruMd">
+          <Link href={"/auth"} >
+             <Button colorScheme={"guru"} variant="outline" size="guruMd">
               <Text>Log in</Text>
             </Button>
-            <Button colorScheme={"guru"} size="guruMd">
+            </Link>
+
+            
+
+            <Link href={"/auth"}><Button colorScheme={"guru"} size="guruMd">
               <Text>Sign up</Text>
-            </Button>
+            </Button></Link>
+           
+           
           </ButtonGroup>
         </Box>
         {/* 3rd component */}
