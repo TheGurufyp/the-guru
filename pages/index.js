@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading, Spacer } from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
 
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 export default function Home() {
 
 
@@ -20,7 +20,7 @@ export default function Home() {
         border={"1px"} borderColor="gray.100" maxW="1400px" mx="auto" borderBottomRadius={"8px"} >
 
         <Box pl="100px" flexBasis="50%" mt="20px">
-          <Heading mt="90px" size={["lg", "xl", "2xl"]} >Every <span> <Heading color="guru.500" size={["lg", "xl", "2xl"]} display={"inline-block"}> <Typed
+          {/* <Heading mt="90px" size={["lg", "xl", "2xl"]} >Every <span> <Heading color="guru.500" size={["lg", "xl", "2xl"]} display={"inline-block"}> <Typed
             strings={[
               'Developer',
               'Everyone',
@@ -30,7 +30,7 @@ export default function Home() {
 
             backDelay={2000}
             loop
-          /></Heading></span>has</Heading>
+          /></Heading></span>has</Heading> */}
           <Heading mt="10px" size={["lg", "xl", "2xl"]}>a Guru.</Heading>
 
 
