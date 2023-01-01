@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import {
   Flex,
   Box,
@@ -17,6 +17,16 @@ import { dracula } from "@uiw/codemirror-theme-dracula";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import AvatarCard from "../../components/AvatarCard";
 export default function Editor() {
+  const [client, setClient] = useState([
+    {
+      socketId: 1,
+      username: "nabeel",
+    },
+    {
+      socketId: 2,
+      username: "hunfa",
+    },
+  ]);
   const onChange = React.useCallback((value, viewUpdate) => {
     console.log("value:", value);
   }, []);
@@ -29,7 +39,7 @@ export default function Editor() {
           //    border={"1px"}
           >
             <Box>
-              <Box pos={"relative"}>
+              <Box pos={"relative"} fontSize="1rem" letterSpacing={"1px"}>
                 <CodeMirror
                   //   value=""
                   placeholder={"Enter The Code"}
@@ -146,7 +156,21 @@ export default function Editor() {
               width={"100%"}
               height="70%"
             >
-              <AvatarCard />
+              <Flex
+                justify={"space-evenly"}
+                wrap="wrap"
+                width={"100%"}
+                my="1rem"
+              >
+                {client.map((client) => {
+                  return (
+                    <AvatarCard
+                      clients={client.username}
+                      key={client.socketId}
+                    />
+                  );
+                })}
+              </Flex>
             </Box>
             <Flex justify={"space-evenly"} width="100%" mb={"2rem"}>
               <Button colorScheme={"green"} variant="outline">

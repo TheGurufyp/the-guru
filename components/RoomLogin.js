@@ -23,6 +23,7 @@ import { ArrowUpIcon } from "@chakra-ui/icons";
 export default function RoomLogin() {
   const [roomId, setRoomId] = useState("");
   const [username, setusername] = useState("");
+
   const router = useRouter();
 
   const generateId = () => {
